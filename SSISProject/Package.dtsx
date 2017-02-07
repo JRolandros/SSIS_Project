@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/5/2017 10:32:31 PM"
@@ -7,15 +7,198 @@
   DTS:CreatorName="DESKTOP-RELKF5O\cakamba"
   DTS:DTSID="{8D901A6F-4F10-4CC2-A404-B703F5CBB150}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LastModifiedProductVersion="13.0.2150.2"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{AA31422C-D096-4E97-8FB6-512CFAEB7A2B}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{3D8593CE-A8C6-4781-9EDE-0F313454EEA6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ConManagerFF]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Flate file connection manager"
+      DTS:DTSID="{8ED059D5-0DB6-4DAF-A61C-8B51BDF0BCEF}"
+      DTS:ObjectName="ConManagerFF">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Roland\SSIS\SSIS_Project\Docs\FL_insurance_sample.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="policyID"
+              DTS:DTSID="{267FA5A5-2225-4615-A06F-B6D8EDD53D53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="statecode"
+              DTS:DTSID="{1D2E85F2-0E81-41C1-BE12-52EB7EF7C81A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="county"
+              DTS:DTSID="{54CD926D-FF00-426C-BDD2-CC3EAF3B01F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="eq_site_limit"
+              DTS:DTSID="{C8AF6831-4BE1-4468-92A4-C0C95FAC455C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hu_site_limit"
+              DTS:DTSID="{A252C883-40AB-49AA-8033-51525D74F729}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fl_site_limit"
+              DTS:DTSID="{F9CBC691-4D55-4D2C-BC7F-15C6588E333B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fr_site_limit"
+              DTS:DTSID="{986B5DF4-FAB3-47DE-9E24-7CA54BF20B60}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tiv_2011"
+              DTS:DTSID="{96C093EF-F6CA-4C9C-BADF-5D77CCDA32A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tiv_2012"
+              DTS:DTSID="{FD09E4FB-97E0-4724-9A1F-C55FFCC9E5BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="eq_site_deductible"
+              DTS:DTSID="{870F31DA-38C6-4EF1-BF37-C963351063D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hu_site_deductible"
+              DTS:DTSID="{98108AF4-B214-498B-958A-AF16D7B4B780}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fl_site_deductible"
+              DTS:DTSID="{195AB1E9-AA5A-4763-A187-F815880716C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fr_site_deductible"
+              DTS:DTSID="{1C1C001A-CF07-4130-B0DE-9B9DE954CD78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="point_latitude"
+              DTS:DTSID="{4151FA35-993B-4F8A-A7B7-D9DF6EFF8478}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="point_longitude"
+              DTS:DTSID="{F6136135-4B2A-4C3F-9FE5-712693BAD1CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="line"
+              DTS:DTSID="{2C5ED316-5DED-4F86-A685-7F627F6B5A88}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="construction"
+              DTS:DTSID="{E97621D6-C784-47D7-B926-F5C8B99E7543}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="point_granularity"
+              DTS:DTSID="{D3BDE74B-5D93-404B-920E-DF1ECE13AEEC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
       DTS:CreationName="FLATFILE"
@@ -30,7 +213,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\cakamba\Documents\Roland\Dev\DotNet\SSIS\DataFiles\FL_insurance_sample.csv\FL_insurance_sample.csv">
+          DTS:ConnectionString="D:\Roland\SSIS\SSIS_Project\Docs\FL_insurance_sample.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -208,66 +391,39 @@
           DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQLI50050-7.SSISRoProject]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0842193F-9CD3-473D-A701-A39810B5F272}"
+      DTS:ObjectName="SQLI50050-7.SSISRoProject">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQLI50050-7;Initial Catalog=SSISRoProject;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Data Management"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{166DD8E7-22F6-4284-8CC0-9768C08B06AE}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task">
+      DTS:ObjectName="Data Management">
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Data Mining Query"
-              componentClassID="Microsoft.PXPipelineDMQuery"
-              description="Data Mining Query"
-              name="Data Mining Query">
-              <properties>
-                <property
-                  dataType="System.String"
-                  name="ObjectRef"></property>
-                <property
-                  dataType="System.String"
-                  name="QueryText"></property>
-                <property
-                  dataType="System.String"
-                  name="CatalogName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task\Data Mining Query.Connections[Analysis Services Connection]"
-                  description="Analysis Services Connection"
-                  name="Analysis Services Connection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Data Mining Query.Inputs[AnalysisServicesServerInput]"
-                  name="AnalysisServicesServerInput">
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Data Mining Query.Outputs[Data Mining Query]"
-                  name="Data Mining Query">
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Data Management\DataSource"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1033"
-              name="Flat File Source"
+              name="DataSource"
               usesDispositions="true"
               version="1">
               <properties>
@@ -282,25 +438,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Management\DataSource.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Management\DataSource.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[policyID]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[policyID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[policyID]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[policyID]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[policyID]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[policyID]"
                       name="policyID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -315,14 +471,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[statecode]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[statecode]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[statecode]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[statecode]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[statecode]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[statecode]"
                       name="statecode"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -337,14 +493,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[county]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[county]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[county]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[county]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[county]"
                       name="county"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -359,14 +515,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[eq_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[eq_site_limit]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[eq_site_limit]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[eq_site_limit]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[eq_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[eq_site_limit]"
                       name="eq_site_limit"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -381,14 +537,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hu_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[hu_site_limit]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hu_site_limit]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[hu_site_limit]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hu_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[hu_site_limit]"
                       name="hu_site_limit"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -403,14 +559,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fl_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fl_site_limit]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fl_site_limit]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fl_site_limit]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fl_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fl_site_limit]"
                       name="fl_site_limit"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -425,14 +581,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fr_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fr_site_limit]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fr_site_limit]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fr_site_limit]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fr_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fr_site_limit]"
                       name="fr_site_limit"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -447,14 +603,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[tiv_2011]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[tiv_2011]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tiv_2011]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[tiv_2011]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[tiv_2011]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[tiv_2011]"
                       name="tiv_2011"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -469,14 +625,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[tiv_2012]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[tiv_2012]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tiv_2012]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[tiv_2012]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[tiv_2012]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[tiv_2012]"
                       name="tiv_2012"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -491,14 +647,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[eq_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[eq_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[eq_site_deductible]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[eq_site_deductible]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[eq_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[eq_site_deductible]"
                       name="eq_site_deductible"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -513,14 +669,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hu_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[hu_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hu_site_deductible]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[hu_site_deductible]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[hu_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[hu_site_deductible]"
                       name="hu_site_deductible"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -535,14 +691,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fl_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fl_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fl_site_deductible]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fl_site_deductible]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fl_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fl_site_deductible]"
                       name="fl_site_deductible"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -557,14 +713,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fr_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fr_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fr_site_deductible]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fr_site_deductible]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[fr_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fr_site_deductible]"
                       name="fr_site_deductible"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -579,14 +735,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[point_latitude]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_latitude]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[point_latitude]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[point_latitude]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[point_latitude]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_latitude]"
                       name="point_latitude"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -601,14 +757,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[point_longitude]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_longitude]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[point_longitude]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[point_longitude]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[point_longitude]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_longitude]"
                       name="point_longitude"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -623,14 +779,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[line]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[line]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[line]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[line]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[line]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[line]"
                       name="line"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -645,14 +801,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[construction]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[construction]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[construction]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[construction]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[construction]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[construction]"
                       name="construction"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -667,14 +823,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[point_granularity]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_granularity]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[point_granularity]"
+                      externalMetadataColumnId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[point_granularity]"
                       length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[point_granularity]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_granularity]"
                       name="point_granularity"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -692,109 +848,109 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[policyID]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[policyID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="policyID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[statecode]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[statecode]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="statecode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[county]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[county]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="county" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[eq_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[eq_site_limit]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="eq_site_limit" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hu_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[hu_site_limit]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="hu_site_limit" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fl_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fl_site_limit]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="fl_site_limit" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fr_site_limit]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fr_site_limit]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="fr_site_limit" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tiv_2011]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[tiv_2011]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="tiv_2011" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tiv_2012]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[tiv_2012]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="tiv_2012" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[eq_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[eq_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="eq_site_deductible" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hu_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[hu_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="hu_site_deductible" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fl_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fl_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="fl_site_deductible" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[fr_site_deductible]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[fr_site_deductible]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="fr_site_deductible" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[point_latitude]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[point_latitude]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="point_latitude" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[point_longitude]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[point_longitude]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="point_longitude" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[line]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[line]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="line" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[construction]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[construction]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="construction" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[point_granularity]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Output].ExternalColumns[point_granularity]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -802,29 +958,1388 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Management\SQL Server Destination"
+              componentClassID="Microsoft.SQLServerDestination"
+              contactInfo="SQL Server Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;5"
+              description="SQL Server Destination"
+              name="SQL Server Destination"
+              version="5">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.String"
+                  description="The name of the database object to copy data into."
+                  expressionType="Notify"
+                  name="BulkInsertTableName">[dbo].[SSISDataModel]</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any constraints on the destination object are checked during the data copy operation. Corresponds to the bulk insert CHECK_CONSTRAINTS option."
+                  name="BulkInsertCheckConstraints">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the first row to copy. Corresponds to the bulk insert FIRSTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertFirstRow">-1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that any insert triggers defined on the destination object will execute during the data copy. Corresponds to the bulk insert FIRE_TRIGGERS option."
+                  name="BulkInsertFireTriggers">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Corresponds to the bulk insert KEEPIDENTITY option."
+                  name="BulkInsertKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null copied to the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="BulkInsertKeepNulls">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of the last row to copy. Corresponds to the bulk insert LASTROW option."
+                  expressionType="Notify"
+                  name="BulkInsertLastRow">-1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of syntax errors and compilation errors that can occur before the data copy operation is canceled. Each row that cannot be copied is ignored and counted as one error. Corresponds to the bulk insert MAXERRORS option."
+                  name="BulkInsertMaxErrors">-1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies how the data to be copied is sorted. Corresponds to the bulk insert ORDER option."
+                  expressionType="Notify"
+                  name="BulkInsertOrder"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies that a table-level lock is acquired for the duration of the data copy operation. Corresponds to the bulk insert TABLOCK option."
+                  name="BulkInsertTablock">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies in seconds the amount of time the SQL Destination adapter will wait before terminating if there is no data available for insertion.  A timeout value of 0 means the SQL Destination adapter will not time out."
+                  expressionType="Notify"
+                  name="Timeout">30</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion."
+                  name="MaxInsertCommitSize">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Management\SQL Server Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SQLI50050-7.SSISRoProject]"
+                  connectionManagerRefId="Package.ConnectionManagers[SQLI50050-7.SSISRoProject]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input]"
+                  hasSideEffects="true"
+                  name="SQL Server Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[policyID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="policyID"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[policyID]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[policyID]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[eq_site_limit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="eq_site_limit"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[eq_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[eq_site_limit]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[hu_site_limit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hu_site_limit"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[hu_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[hu_site_limit]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[fl_site_limit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fl_site_limit"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fl_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fl_site_limit]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[fr_site_limit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fr_site_limit"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fr_site_limit]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fr_site_limit]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[tiv_2011]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tiv_2011"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[tiv_2011]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[tiv_2011]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[tiv_2012]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tiv_2012"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[tiv_2012]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[tiv_2012]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[eq_site_deductible]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="eq_site_deductible"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[eq_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[eq_site_deductible]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[hu_site_deductible]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hu_site_deductible"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[hu_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[hu_site_deductible]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[fl_site_deductible]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fl_site_deductible"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fl_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fl_site_deductible]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[fr_site_deductible]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fr_site_deductible"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fr_site_deductible]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[fr_site_deductible]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[point_latitude]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="point_latitude"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[point_latitude]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_latitude]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[point_longitude]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="point_longitude"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[point_longitude]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_longitude]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[line]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="line"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[line]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[line]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[construction]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="construction"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[construction]"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[construction]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[T_statecode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="T_statecode"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[statecode]"
+                      lineageId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_statecode]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[T_country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="T_country"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[country]"
+                      lineageId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_country]" />
+                    <inputColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].Columns[T_point_granularity]"
+                      cachedDataType="i4"
+                      cachedName="T_point_granularity"
+                      externalMetadataColumnId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[point_granularity]"
+                      lineageId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_point_granularity]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[policyID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="policyID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[statecode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="statecode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[eq_site_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="eq_site_limit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[hu_site_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hu_site_limit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fl_site_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fl_site_limit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fr_site_limit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fr_site_limit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[tiv_2011]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="tiv_2011" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[tiv_2012]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="tiv_2012" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[eq_site_deductible]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="eq_site_deductible" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[hu_site_deductible]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hu_site_deductible" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fl_site_deductible]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fl_site_deductible" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[fr_site_deductible]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fr_site_deductible" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[point_latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="point_latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[point_longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="point_longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[line]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="line" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[construction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="construction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input].ExternalColumns[point_granularity]"
+                      dataType="i4"
+                      name="point_granularity" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Management\TransformationScript"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;10"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="TransformationScript"
+              version="8">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="30">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();   
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    /*
+     * Add your code here
+     */
+    string country = Row.county;
+    string statecode = Row.statecode;
+    if (!string.IsNullOrWhiteSpace(country))
+      Row.Tcountry = country + " "+ statecode;
+    Row.Tstatecode = statecode + "Ro";
+    Row.Tpointgranularity = Int32.Parse(Row.pointgranularity);
+
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String statecode
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool statecode_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String county
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool county_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public String pointgranularity
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[2]);
+        }
+    }
+    public bool pointgranularity_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public String Tstatecode
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool Tstatecode_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Tcountry
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool Tcountry_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 Tpointgranularity
+    {
+        set
+        {
+            this[5] = value;
+        }
+    }
+    public bool Tpointgranularity_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(5);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties.Settings.get_Default():SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties.Sett" +
+    "ings")]
+
+namespace SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:CodeName>SC_df0411eef0be4e31bd2cf9fd00b6d77a</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
+		<msb:DisplayName>SC_df0411eef0be4e31bd2cf9fd00b6d77a</msb:DisplayName>
+		<msb:ProjectId>{C1EAC3FA-10DF-4AA1-99A2-0EB9B830AD8E}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="SC_df0411eef0be4e31bd2cf9fd00b6d77a.csproj"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="main.cs"/>
+		<msb:File Include="BufferWrapper.cs"/>
+		<msb:File Include="ComponentWrapper.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_df0411eef0be4e31bd2cf9fd00b6d77a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_df0411eef0be4e31bd2cf9fd00b6d77a")]
+[assembly: AssemblyCopyright("Copyright @  2017")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_df0411eef0be4e31bd2cf9fd00b6d77a.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2509F83-75E4-493C-B00C-6B2626BAC788}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_df0411eef0be4e31bd2cf9fd00b6d77a</RootNamespace>
+    <AssemblyName>SC_df0411eef0be4e31bd2cf9fd00b6d77a</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptComponent" IconIndex="0" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC130</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_df0411eef0be4e31bd2cf9fd00b6d77a.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_df0411eef0be4e31bd2cf9fd00b6d77a.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJ2JmFgAAAAAAAAAAOAAIiALATAAABYAAAAIAAAAAAAAXjQA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAAw0AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAZBQAAAAgAAAAFgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAYAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABA
+NAAAAAAAAEgAAAACAAUAdCIAAOAQAAABAAAAAAAAAFQzAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioTMAQASwAAAAEAABEDbwgAAAYK
+A28GAAAGCwYoEgAACi0SAwZyAQAAcAcoEwAACm8OAAAGAwdyBQAAcCgUAAAKbwwAAAYDA28KAAAG
+KBUAAApvEAAABioeAigUAAAGKioCAwQFKBYAAAoqUgJ7FwAACgJ7GAAAChaUbxkAAAoqIgIWKBoA
+AAoqUgJ7FwAACgJ7GAAACheUbxkAAAoqIgIXKBoAAAoqUgJ7FwAACgJ7GAAAChiUbxkAAAoqIgIY
+KBoAAAoqJgIZAygbAAAKKloDLAgCGSgcAAAKKnILAABwcx0AAAp6JgIaAygbAAAKKloDLAgCGigc
+AAAKKnILAABwcx0AAAp6OgIbA4wbAAABKBsAAAoqWgMsCAIbKBwAAAoqcgsAAHBzHQAACnoeAige
+AAAKKh4CKB8AAAoqfgIoIAAACgICcxgAAAZ9AQAABAICcxkAAAZ9AgAABCqSBHKoAABwGm8hAAAK
+LBUCBQIDKCIAAAoOBHMFAAAGbxYAAAYqSisHAgNvFwAABgNvEgAABi3xKgYqOgIoIwAACgIDfQMA
+AAQqOgIoIwAACgIDfQQAAAQqHgIoIwAACiqufgUAAAQtHnK4AABw0AcAAAIoJAAACm8lAAAKcyYA
+AAqABQAABH4FAAAEKhp+BgAABCoeAoAGAAAEKhp+BwAABCoeAignAAAKKi5zHwAABoAHAAAEKgAA
+QlNKQgEAAQAAAAAADAAAAHY0LjAuMzAzMTkAAAAABQBsAAAAcAYAACN+AADcBgAABAcAACNTdHJp
+bmdzAAAAAOANAAAsAQAAI1VTAAwPAAAQAAAAI0dVSUQAAAAcDwAAxAEAACNCbG9iAAAAAAAAAAIA
+AAFXFaIBCQEAAAD6ATMAFgAAAQAAACAAAAAIAAAABwAAACAAAAATAAAAJwAAABAAAAABAAAAAwAA
+AA8AAAAQAAAAAQAAAAQAAAABAAAAAAApAwEAAAAAAAYAIALyBAYAtALyBAYAbAHfBA8AZgUAAAYA
+mQE0BAYAAwI0BAYA5AE0BAYAmwI0BAYAQAI0BAYAWQI0BAYAsAE0BAYAywHvAgoAdAKzAAoAsQSz
+AA4AogSzAAoAfQSzAAoAMwazAAYA9gXsAwYATwHfBAYAwgQSBQYAcQQfBBIAHwETAxIAgAETAxIA
+AQEKBAYANAHyBAYADAPsAwYAAQDsAwYARgTsAwYAYATsAwYA1ADsAwYAhQDsAwYAuAY0BAAAAAAH
+AAAAAAABAAEAAQAQAP8DAAAQAAEAAQABABAAlQQAADkAAQAFAAEAEAAVBgAARQABABQAAQAQAOMF
+AABJAAMAGAABABAApAUAAEkABAAZAAAAEAAZBXUFSQAFABoAAAEQANMFdQVhAAcAHgAGAOMFkQAG
+AKQFlQABACMGmQABACMGmQARAPMDnQARAPEAoQARAFgApQBQIAAAAADGANICBgABAFggAAAAAMYA
+3QIGAAEAYCAAAAAAxgCVBqkAAQC3IAAAAACGGNIEBgACAL8gAAAAAIYY0gQ3AAIAyiAAAAAAhgh3
+AK8ABQDfIAAAAACGCGcDWQAFAOggAAAAAIYI+QavAAUA/SAAAAAAhgjJA1kABQAGIQAAAACGCOQG
+rwAFABshAAAAAIYIrQNZAAUAJCEAAAAAhghoABAABQAuIQAAAACGCFEDswAGAEUhAAAAAIYIwQYQ
+AAcATyEAAAAAhgh8A7MACABmIQAAAACGCM4GAQAJAHUhAAAAAIYIkAOzAAoAjCEAAAAAhgCsBlkA
+CwCUIQAAAACGAP0FWQALAJwhAAAAAIYY0gQGAAsAvCEAAAAAxgCIBrgACwDhIQAAAADGAYEGqQAP
+APQhAAAAAMYBlQapABAA9iEAAAAAhhjSBMIAEQAFIgAAAACGGNIEwgASABQiAAAAAIMY0gQGABMA
+HCIAAAAAkwi+BMgAEwBIIgAAAACTCNkAzQATAE8iAAAAAJMI5QDSABMAVyIAAAAAlggJBtgAFABe
+IgAAAACGGNIEBgAUAGYiAAAAAJEY2ATdABQAAAABALAGAAABALcEAAACAK4FAAADAIsEAAABAOkC
+AAABAOkCAAABAOkCAAABAOkCAAABAOkCAAABAOkCAAABABAAAAACAKkAAAADALcEAAAEAIsEAAAB
+ALcEAAABALAGAAABADkGAAABADkGAAABAOkCCQDSBAEAEQDSBAYAGQDSBAoAKQDSBBAAMQDSBBAA
+OQDSBBAAQQDSBBAASQDSBBAAUQDSBBAAWQDSBBAAYQDSBBAAaQDSBAYAmQDSBAYAuQDSBBUAyQDS
+BAYAiQDSAgYAiQDdAgYA0QBFACAA0QDvBSUA0QDvBSwA2QAZATIAcQDSBDcAcQC3BEEAcQCuBUUA
+eQAJA0kAcQDUA04AcQDjA1MAcQDbAwEA4QDSBBAAcQCsBlkAcQD9BVkAiQDSBAYA0QDcBV0AiQDC
+BWQAkQDSBAYA8QCXAGoA8QC0BnEAoQDSBHcAwQDSBAYALgALAPwALgATAAUBLgAbACQBLgAjAC0B
+LgArAFYBLgAzAFYBLgA7AFYBLgBDAC0BLgBLAFwBLgBTAFYBLgBbAHMBQwBjAL0B4QB7AL0B4wBr
+AL0BqQFzACQByQFzACQBGwADAAEABwANAAgADwAAAHsA4QAAAGsD5QAAAP0G4QAAAM0D5QAAAOgG
+4QAAALED5QAAAGwA4QAAAFUD5QAAAMUG4QAAAIAD5QAAANIG6QAAAJQD5QAAAMIE7QAAAPkA8gAA
+AA0G9wACAAYAAwACAAcABQACAAgABwACAAkACQACAAoACwACAAsADQABAAwADwABAA0AEQABAA4A
+EwABAA8AFQABABAAFwABABEAGQACABsAGwACABwAHQABAB0AHQACAB4AHwAEgAAAAQAAAAAAAAAA
+AAAAAAAYAAAABAAAAAAAAAAAAAAAfwA8AAAAAAANAAAAAAAAAAAAAACIAEMGAAAAAA0AAAAAAAAA
+AAAAAIgAYAYAAAAABAAAAAAAAAAAAAAAfwDsAwAAAAAAAAAAAQAAACMFAAAAAABJbnQzMgA8TW9k
+dWxlPgBJbnB1dElEAFNDX2RmMDQxMWVlZjBiZTRlMzFiZDJjZjlmZDAwYjZkNzdhAG1zY29ybGli
+AElzTnVsbE9yV2hpdGVTcGFjZQBkZWZhdWx0SW5zdGFuY2UAc2V0X1RzdGF0ZWNvZGUAZ2V0X3N0
+YXRlY29kZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUATWlj
+cm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVy
+ZQByZXNvdXJjZUN1bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAUGFyc2UARWRpdG9yQnJv
+d3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29k
+ZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBB
+c3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZy
+YW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlE
+ZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2Vt
+Ymx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0
+Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVu
+dGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0ZQBQb3N0RXhlY3V0ZQB2YWx1ZQBT
+eXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAEdldFN0cmluZwBTeXN0ZW0uQ29tcG9uZW50TW9kZWwA
+U0NfZGYwNDExZWVmMGJlNGUzMWJkMmNmOWZkMDBiNmQ3N2EuZGxsAHNldF9Uc3RhdGVjb2RlX0lz
+TnVsbABnZXRfc3RhdGVjb2RlX0lzTnVsbABzZXRfVGNvdW50cnlfSXNOdWxsAHNldF9UcG9pbnRn
+cmFudWxhcml0eV9Jc051bGwAZ2V0X3BvaW50Z3JhbnVsYXJpdHlfSXNOdWxsAGdldF9jb3VudHlf
+SXNOdWxsAFNldE51bGwAc2V0X0l0ZW0AU3lzdGVtAHJlc291cmNlTWFuAFNjcmlwdE1haW4AU3lz
+dGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24A
+SW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBTdHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91
+dHB1dE5hbWVNYXAAT3V0cHV0TWFwAElucHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRC
+dWZmZXIAZ2V0X1Jlc291cmNlTWFuYWdlcgAuY3RvcgAuY2N0b3IAU3lzdGVtLkRpYWdub3N0aWNz
+AFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVtLlJlc291cmNlcwBTQ19kZjA0
+MTFlZWYwYmU0ZTMxYmQyY2Y5ZmQwMGI2ZDc3YS5Qcm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJj
+ZXMARGVidWdnaW5nTW9kZXMAU0NfZGYwNDExZWVmMGJlNGUzMWJkMmNmOWZkMDBiNmQ3N2EuUHJv
+cGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNl
+dHRpbmdzAEVxdWFscwBDb25uZWN0aW9ucwBDb25jYXQAT2JqZWN0AEVuZE9mUm93c2V0AGdldF9E
+ZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABNaWNy
+b3NvZnQuU3FsU2VydmVyLlR4U2NyaXB0AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuUGlwZWxpbmVIb3N0
+AElucHV0MF9Qcm9jZXNzSW5wdXQASW5wdXQwX1Byb2Nlc3NJbnB1dFJvdwBOZXh0Um93AGdldF9B
+c3NlbWJseQBzZXRfVGNvdW50cnkAc2V0X1Rwb2ludGdyYW51bGFyaXR5AGdldF9wb2ludGdyYW51
+bGFyaXR5AGdldF9jb3VudHkAAAMgAAAFUgBvAACAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIA
+dAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBz
+AHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkA
+bgBzAHQAZQBhAGQALgAAD0kAbgBwAHUAdAAgADAAAHFTAEMAXwBkAGYAMAA0ADEAMQBlAGUAZgAw
+AGIAZQA0AGUAMwAxAGIAZAAyAGMAZgA5AGYAZAAwADAAYgA2AGQANwA3AGEALgBQAHIAbwBwAGUA
+cgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAAYtOZluVWq06161GlVd1kWAAEIAEBCAMg
+AAEFIAEBEREEIAEBDgUgAQERWQQHAg4OBAABAg4GAAMODg4OBQACDg4OBAABCA4JIAMBEj0dCBJB
+AwYSPQMGHQgEIAEOCAQgAQIIBSACAQgcAyAAAgYgAgIOEXUFIAEdCAgGAAESeRF9BSAAEoCBByAC
+AQ4SgIEIt3pcVhk04IkIiYRdzYCAzJEDBhIUAwYSGAMGEkUDBhJRAwYSVQMGEiAFIAEBEgwDIAAO
+BCABAQIJIAQBCA4SPRJBBSABARJFBAAAElEEAAASVQUAAQESVQQAABIgAwAAAQMoAA4DKAACAygA
+CAQIABJRBAgAElUECAASIAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEI
+AQACAAAAAAAoAQAjU0NfZGYwNDExZWVmMGJlNGUzMWJkMmNmOWZkMDBiNmQ3N2EAAAUBAAAAABYB
+ABFDb3B5cmlnaHQgQCAgMjAxNwAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC41AQBUDhRG
+cmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjUEAQAAAAAAtAAAAM7K774BAAAA
+kQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00
+LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkj
+U3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAA
+ADQ0AAAAAAAAAAAAAE40AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABANAAAAAAAAAAAAAAAAF9D
+b3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABI
+AAAAWEAAAOwDAAAAAAAAAAAAAOwDNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAA
+AAC9BO/+AAABAAAAAQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
+AAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4A
+AAAAAAAAsARMAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAAoAwAAAQAwADAAMAAw
+ADAANABiADAAAAAaAAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4A
+eQBOAGEAbQBlAAAAAAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAA
+AFMAQwBfAGQAZgAwADQAMQAxAGUAZQBmADAAYgBlADQAZQAzADEAYgBkADIAYwBmADkAZgBkADAA
+MABiADYAZAA3ADcAYQAAADAACAABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgAw
+AC4AMAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AZABmADAANAAxADEA
+ZQBlAGYAMABiAGUANABlADMAMQBiAGQAMgBjAGYAOQBmAGQAMAAwAGIANgBkADcANwBhAC4AZABs
+AGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgA
+dAAgAEAAIAAgADIAMAAxADcAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABlAG0AYQByAGsAcwAA
+AAAAAAAAAHgAKAABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAEMAXwBkAGYA
+MAA0ADEAMQBlAGUAZgAwAGIAZQA0AGUAMwAxAGIAZAAyAGMAZgA5AGYAZAAwADAAYgA2AGQANwA3
+AGEALgBkAGwAbAAAAGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AZABmADAA
+NAAxADEAZQBlAGYAMABiAGUANABlADMAMQBiAGQAMgBjAGYAOQBmAGQAMAAwAGIANgBkADcANwBh
+AAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAADgA
+CAABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAABgNAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_df0411eef0be4e31bd2cf9fd00b6d77a</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum"
+                  typeConverter="NOTBROWSABLE">2b31834dfde2b6c9f31c447b3464af9e</property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataShaChecksum"
+                  typeConverter="NOTBROWSABLE">5db1cbc9048e5f61fd6c0f197db9a59b348d8420</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Management\TransformationScript.Inputs[Input 0]"
+                  hasSideEffects="true"
+                  name="Input 0">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Management\TransformationScript.Inputs[Input 0].Columns[statecode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="statecode"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[statecode]" />
+                    <inputColumn
+                      refId="Package\Data Management\TransformationScript.Inputs[Input 0].Columns[county]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="county"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[county]" />
+                    <inputColumn
+                      refId="Package\Data Management\TransformationScript.Inputs[Input 0].Columns[point_granularity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="point_granularity"
+                      lineageId="Package\Data Management\DataSource.Outputs[Flat File Source Output].Columns[point_granularity]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Management\TransformationScript.Outputs[Output 0]"
+                  name="Output 0"
+                  synchronousInputId="Package\Data Management\TransformationScript.Inputs[Input 0]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_statecode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_statecode]"
+                      name="T_statecode" />
+                    <outputColumn
+                      refId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_country]"
+                      name="T_country" />
+                    <outputColumn
+                      refId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_point_granularity]"
+                      dataType="i4"
+                      lineageId="Package\Data Management\TransformationScript.Outputs[Output 0].Columns[T_point_granularity]"
+                      name="T_point_granularity" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -833,10 +2348,15 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Data Mining Query.Inputs[AnalysisServicesServerInput]"
+              refId="Package\Data Management.Paths[Flat File Source Output]"
+              endId="Package\Data Management\TransformationScript.Inputs[Input 0]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Management\DataSource.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Data Management.Paths[Output 0]"
+              endId="Package\Data Management\SQL Server Destination.Inputs[SQL Server Destination Input]"
+              name="Output 0"
+              startId="Package\Data Management\TransformationScript.Outputs[Output 0]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -847,7 +2367,7 @@
 <!--If you manually edit this section and make a mistake, you can delete it. -->
 <!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
-  Version="8">
+  Version="sql12">
   <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
@@ -855,39 +2375,69 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
+          Size="165,42"
+          Id="Package\Data Management"
           TopLeft="5.5,5.5" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[localhost]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Data Management">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="94.4,134.4" />
+          Size="150,42"
+          Id="Package\Data Management\DataSource"
+          TopLeft="95.4,129.4" />
         <NodeLayout
-          Size="166.4,41.6"
-          Id="Package\Data Flow Task\Data Mining Query"
-          TopLeft="300,135.2" />
+          Size="178,42"
+          Id="Package\Data Management\TransformationScript"
+          TopLeft="298,130" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="244.8,155.6">
+          Id="Package\Data Management.Paths[Flat File Source Output]"
+          TopLeft="245.4,150.7">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="55.2,0"
+              EndConnector="52.6,0"
               Start="0,0"
-              End="47.7,0">
+              End="45.1,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="47.7,0" />
+                    End="45.1,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Data Management\SQL Server Destination"
+          TopLeft="594,128" />
+        <EdgeLayout
+          Id="Package\Data Management.Paths[Output 0]"
+          TopLeft="476,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="118,0"
+              Start="0,0"
+              End="110.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="110.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -899,9 +2449,13 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <ConnectionManager
-    design-time-name="Package.ConnectionManagers[localhost]">
-    <ProjectReferenceName></ProjectReferenceName>
-  </ConnectionManager>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Management\SQL Server Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
